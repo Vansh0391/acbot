@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AccBot — Your Smart Commerce Teacher</title>
+  <style>
+    :root{--blue:#2274f5;--soft:#f6fbff;--muted:#6b7280;--card:#ffffff;}
+    body{font-family:Inter, Arial, sans-serif;margin:0;background:var(--soft);color:#0b2545;}
+    header{background:linear-gradient(90deg,var(--blue),#63b8ff);color:#fff;padding:28px 18px;text-align:center;}
+    h1{margin:0;font-size:26px;letter-spacing:0.2px;}
+    p.lead{margin:8px 0 0;opacity:0.95;}
+    .container{max-width:980px;margin:28px auto;padding:0 18px;}
+    .card{background:var(--card);border-radius:12px;padding:20px;box-shadow:0 8px 30px rgba(11,37,69,0.06);}
+    .grid{display:grid;grid-template-columns:1fr 300px;gap:18px;align-items:start;}
+    .small{font-size:13px;color:var(--muted);}
+    footer{text-align:center;color:var(--muted);font-size:13px;padding:18px;}
+    .logo{display:inline-block;background:#fff;padding:8px 12px;border-radius:8px;color:var(--blue);font-weight:700;margin-bottom:8px;}
+    .note{margin-top:12px;padding:12px;border-radius:8px;background:#f0f7ff;color:#08306b;font-size:14px;}
+    @media(max-width:880px){.grid{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">AccBot</div>
+    <h1>AccBot — Your Smart Commerce Teacher</h1>
+    <p class="lead">Ask questions about accounting, partnership, company accounts, cash flows, and more — in teacher–student style.</p>
+  </header>
+
+  <div class="container">
+    <div class="card grid">
+      <div>
+        <h2>Welcome 👋</h2>
+        <p class="small">This page hosts your trained AccBot. Click the floating chat bubble at the bottom-right to start a conversation. AccBot uses your uploaded learning files and speaks in a friendly teacher voice.</p>
+
+        <div class="note">
+          <strong>Personalization:</strong> If your app replaces &lt;StudentName&gt; with the learner's name before rendering replies, AccBot will address students directly inside examples.
+        </div>
+
+        <h3 style="margin-top:16px">How to use</h3>
+        <ol>
+          <li>Open this file in your browser — the chat bubble will appear (bottom-right).</li>
+          <li>Type a question (eg. "Explain goodwill with example").</li>
+          <li>To embed on your own site, copy this file or paste the script block below into your page's &lt;/body&gt; section.</li>
+        </ol>
+
+        <p class="small">Do not put any private API secrets into client HTML. This page only uses the public agent/embed id.</p>
+      </div>
+
+      <div>
+        <div class="card" style="padding:14px;">
+          <strong>Widget status</strong>
+          <p style="margin:8px 0 0"><span style="font-weight:700;color:var(--blue)">Agent ID:</span><br><code style="word-break:break-all">vEIGP2IhLoGPMgPweFBOV</code></p>
+          <p class="small" style="margin-top:10px">This is the public embed id used by the chat widget. Safe to include in client-side pages.</p>
+        </div>
+
+        <div class="card" style="margin-top:12px;padding:12px;font-size:13px;">
+          <strong>Embed snippet</strong>
+          <p class="small" style="margin:8px 0">Copy this script into your site's HTML (before &lt;/body&gt;):</p>
+          <pre style="background:#f4f7ff;padding:8px;border-radius:6px;overflow:auto;font-size:13px"><code>&lt;script&gt;
+  window.chatbaseConfig = { chatbotId: "vEIGP2IhLoGPMgPweFBOV" };
+&lt;/script&gt;
+&lt;script src="https://www.chatbase.co/embed.min.js" id="vEIGP2IhLoGPMgPweFBOV" defer&gt;&lt;/script&gt;</code></pre>
+          <p class="small" style="margin-top:10px">After adding, reload your page — the chat bubble should appear and connect to your AccBot.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>AccBot • Built by Vansh • © 2025 — Keep API secrets on the server only</footer>
+
+  <!-- Chatbase widget: public embed id (Agent/Chatbot ID) -->
+  <script>
+    window.chatbaseConfig = { chatbotId: "vEIGP2IhLoGPMgPweFBOV" };
+  </script>
+  <script src="https://www.chatbase.co/embed.min.js" id="vEIGP2IhLoGPMgPweFBOV" defer></script>
+</body>
+</html>
